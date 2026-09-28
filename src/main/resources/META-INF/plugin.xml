@@ -1,0 +1,42 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>wiki.twom.plugin.zk.zk-client</id>
+
+    <!-- Public plugin name should be written in Title Case.
+     Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-name -->
+    <name>ZooKeeper Client</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor url="https://github.com/liuwenlang">twom</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-description.html -->
+    <description><![CDATA[
+        A ZooKeeper client integrated into the IDE.<br>
+        Browse znodes, inspect and edit node data, watch live changes and manage connections
+        without leaving the editor.
+        <ul>
+            <li>Multiple saved connections with digest auth support</li>
+            <li>Lazy-loading znode tree with speed search</li>
+            <li>Node data editor with optimistic versioning and JSON pretty-print</li>
+            <li>Create / delete (recursive) nodes, copy path, go to path</li>
+            <li>Optional watches that auto-refresh the tree on server-side changes</li>
+        </ul>
+        ]]></description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <resource-bundle>messages.MyMessageBundle</resource-bundle>
+
+    <!-- Extensions defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="ZooKeeper" factoryClass="wiki.twom.plugin.zk.ZkToolWindowFactory"
+                    anchor="right" icon="AllIcons.Toolwindows.ToolWindowPalette"/>
+        <notificationGroup id="ZooKeeper" displayType="BALLOON"/>
+    </extensions>
+
+</idea-plugin>

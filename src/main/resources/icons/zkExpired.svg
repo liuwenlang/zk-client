@@ -1,0 +1,9 @@
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <!-- database cylinder -->
+  <path d="M1.5 2.8v6.6c0 .9 1.8 1.6 4 1.6s4-.7 4-1.6V2.8z" fill="#9DA5B5"/>
+  <ellipse cx="5.5" cy="2.8" rx="4" ry="1.6" fill="#C9CFDA"/>
+  <path d="M1.5 6.1c0 .9 1.8 1.6 4 1.6s4-.7 4-1.6" fill="none" stroke="#C9CFDA" stroke-width="1"/>
+  <!-- status: gray clock = session expired -->
+  <circle cx="11.5" cy="11.5" r="4.2" fill="#A8ADBB" stroke="#FFFFFF" stroke-width="1"/>
+  <path d="M11.5 9.4v2.2l1.6 1" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

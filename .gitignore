@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# IntelliJ Platform / Gradle
+.gradle/
+.idea/
+.intellijPlatform/
+.kotlin/
+build/
